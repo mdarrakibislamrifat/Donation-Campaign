@@ -13,11 +13,11 @@ const Card = ({ card }) => {
         <div className="relative m-0 overflow-hidden rounded-none bg-transparent bg-clip-border text-gray-700 shadow-none">
           <img src={picture} alt="ui/ux review check" />
         </div>
-        <div className="p-6">
-          <h4 style={{backgroundColor:category_bg_color}} className="block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased ">
+        <div className="p-6 ">
+          <h4 style={{backgroundColor:category_bg_color,color:text_color}} className="block font-sans   max-w-[80px] rounded-lg leading-snug tracking-normal  antialiased text-center ">
             {category}
           </h4>
-          <p style={{color:text_color}} className="mt-3 block font-sans text-xl font-normal leading-relaxed text-gray-700 antialiased">
+          <p style={{color:text_color}} className="mt-3 block font-sans text-xl  leading-relaxed  text-gray-700 antialiased font-bold">
             {title}
           </p>
         </div>
