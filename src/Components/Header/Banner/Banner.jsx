@@ -1,21 +1,19 @@
 const Banner = () => {
   return (
-    <div className="h-[20vh] mb-10 lg:mb-8">
-      <div className="py-6 mb-10 lg:mb-8">
-        <h1 className="text-xl  lg:text-3xl font-bold flex justify-center items-center ">
-          I Grow By Helping People In Need
-        </h1>
-        <div className="flex  justify-center items-center mt-4">
-          <div className="form-control">
-            <label className="label"></label>
-            <label className="input-group">
-              <input
-                type="text"
-                placeholder="Search here"
-                className="input input-bordered"
-              />
-              <span className="bg-[#FF444A]">Search</span>
-            </label>
+    <div
+      className="hero h-[400px] ml-4"
+      style={{
+        backgroundImage:
+          "url(https://i.ibb.co/tPz3tK9/Rectangle-4281.png?fbclid=IwAR0-j_at9tPKdwksdhUy0DC1nXGiGeF7TiWR7Wb_yoXc_BB5O-ZZbTg8ZZg)",
+      }}
+    >
+      <div className="hero-overlay bg-[white] bg-opacity-80"></div>
+      <div className="hero-content text-center text-neutral-content">
+        <div>
+          <h1 className="mb-5 text-3xl text-black font-bold">I Grow By Helping People In Need</h1>
+          <div>
+          <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs" />
+          <button className="btn bg-[#FF444A]">Search</button>
           </div>
         </div>
       </div>

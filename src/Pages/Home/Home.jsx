@@ -7,7 +7,9 @@ const Home = () => {
     const cards=useLoaderData();
     return (
         <div>
+           <div className="bg-[white] bg-opacity-75">
            <Banner></Banner>
+           </div>
            <Cards cards={cards}></Cards>
         </div>
     );
