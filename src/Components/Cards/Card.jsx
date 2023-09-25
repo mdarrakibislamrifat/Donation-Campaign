@@ -8,7 +8,7 @@ const Card = ({ card }) => {
     category_bg_color,
     card_bg_color,
     text_color,
-  } = card;
+  } = card || {};
   return (
     <Link to={`/cards/${id}`}>
     <div>
