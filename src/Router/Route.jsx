@@ -20,7 +20,7 @@ const myRoute = createBrowserRouter([
             {
                 path:'/',
                 element:<Home></Home>,
-                loader:()=>fetch('donation.json')
+                loader:()=>fetch('/donation.json')
             },
             {
                 path:'/donation',
@@ -33,7 +33,7 @@ const myRoute = createBrowserRouter([
            {
             path:'/cards/:id',
             element:<DonationCard></DonationCard>,
-            loader:()=>fetch('donation.json')
+            loader:()=>fetch('/donation.json')
             
            }
         ]
