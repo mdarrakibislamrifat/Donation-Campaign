@@ -1,7 +1,8 @@
 const Banner = () => {
   return (
-    <div
-      className="hero h-[400px] ml-4"
+    <div className="p-4">
+      <div
+      className="hero h-[400px]"
       style={{
         backgroundImage:
           "url(https://i.ibb.co/tPz3tK9/Rectangle-4281.png?fbclid=IwAR0-j_at9tPKdwksdhUy0DC1nXGiGeF7TiWR7Wb_yoXc_BB5O-ZZbTg8ZZg)",
@@ -17,6 +18,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };
