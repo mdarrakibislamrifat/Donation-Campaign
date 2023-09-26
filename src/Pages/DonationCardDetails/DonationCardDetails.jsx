@@ -34,24 +34,29 @@ const DonationCardDetails = ({ card }) => {
 }
   return (
     <div>
-      <div className="relative rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
-        <div className=" mx-4 -mt-6  rounded-xl  bg-clip-border text-white shadow-lg">
-          <img className="relative w-[1320px] h-[620px]" src={picture}
-          alt="img-blur-shadow" layout="fill" />
-         
-        </div>
-        <button style={{backgroundColor:text_color}} onClick={handleAddToDonate} className="absolute -mt-16 ml-10 p-2 rounded-lg text-white font-semibold">Donate ${price}</button>
+
+
+    <div className='w-full grid justify-start gap-2'>
+    
+    <div className='grid justify-center align-middle mt-10'>
+      <img src={picture}   className=' h-[60vh]  w-full ' />
+      <div className='bg-black bg-opacity-25  sm:h-16
+       -mt-16   '>
         
-        <div className="p-6">
-          <h5 className="mb-2 block font-sans text-2xl font-bold leading-snug tracking-normal text-blue-gray-900 antialiased">
-            {title}
-          </h5>
-          <p className="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
-            {description}
-          </p>
-        </div>
+        <button style={{backgroundColor:text_color}} onClick={handleAddToDonate} className="ml-4 mt-2 p-2 rounded-lg text-white font-semibold">Donate ${price}</button>
         
+         </div>
+         <div className='mt-8 '>
+          <h1 className='text-2xl mb-4 font-bold '>{title}</h1>
+          <p className='w-full'>{description}</p>
+         </div>
+       
+    </div>
+    
+    
+    
       </div>
+    
       
     </div>
   );
