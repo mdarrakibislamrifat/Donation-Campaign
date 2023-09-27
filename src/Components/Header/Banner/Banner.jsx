@@ -5,8 +5,8 @@ const Banner = ({handleCardData}) => {
   const cards = useLoaderData();
   const handleSearch = (e) => {
     e.preventDefault();
-    const value = e.target.text.value;
-    const data = cards.filter((sData) => sData.category === value);
+    const value = e.target.text.value.toLowerCase();
+    const data = cards.filter((sData) => sData.category.toLowerCase() === value);
     handleCardData(data);
   };
   
