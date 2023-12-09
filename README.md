@@ -8,3 +8,12 @@
 
 # Statistics
 * The statistics page creates a pie chart based on the total twelve buttons and donations on the homepage.
+
+# Technology That I am used---
+* Html5
+* css3
+* tailwindcss
+* javascript
+* react.js
+* daisyui
+* VsCode
